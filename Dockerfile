@@ -1,4 +1,4 @@
-FROM arshsisodiya/helioskirepo:public
+FROM python:3.9-slim-buster
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
