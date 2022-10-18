@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM arshsisodiya/helioskirepo:public
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
@@ -8,8 +8,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# copying the directory
-COPY start /start
-
-# run the program
-CMD ["/bin/bash", "/start"]
+CMD ["bash", "start.sh"]
