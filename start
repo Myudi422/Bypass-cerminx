@@ -15,7 +15,7 @@ apt update && apt upgrade -y
 apt install git -y
 _other_installs
 pip3 install -U pip
-git clone https://github.com/Myudi422/ccgmedia-x ccgnimex
+git clone https://github.com/Myudi422/mirror-leech-telegram-bot ccgnimex
 cd ccgnimex
 _externals
 python3 update.py && python3 -m bot
